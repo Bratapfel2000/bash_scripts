@@ -1,0 +1,17 @@
+#!/bin/bash
+# test2000 script
+
+echo "Test 2000 Running!"
+
+func_file () {
+echo "step 1"
+echo "cd /mnt/c/Users/Bakerman2/Dropbox/Programming/Linux/bin"
+pwd
+
+echo "step 2"
+}
+
+func_file
+
+#END
+
