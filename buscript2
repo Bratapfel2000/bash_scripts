@@ -1,0 +1,10 @@
+#/bin/bash
+now=$(date +"%m_%d_%Y")
+echo "backup_$now"
+
+mkdir backup_$now
+
+cp -r kbase backup_$now
+cp -r benv backup_$now
+
+
