@@ -1,0 +1,18 @@
+#/bin/bash
+now=$(date +"%m_%d_%Y")
+#echo "backup_$now"
+
+foldert=/mnt/..../
+
+# read
+echo -n "Enter short description -> "
+read des
+
+echo "$des"
+
+#go to folder and copy files
+cd $foldert 
+
+cp -r $foldert/kbase $foldert/bu/backup_${now}_${des}
+
+echo "created folder 'backup_${now}_${des}'"
