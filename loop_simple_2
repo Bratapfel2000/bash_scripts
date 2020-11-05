@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for i in distros*.txt; do echo "$i"; done
+
+echo "-----"
+
+for i in distros*.txt; do
+	if [[ -e "$i" ]]; then
+		echo "$i"
+	fi
+done
