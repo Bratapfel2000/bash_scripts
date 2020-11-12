@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#different sort of loops through an array
+
+animals=("a dog" "a cat" "a fish")
+
+echo "for i in ${animals[*]}; do echo $i; done"
+for i in ${animals[*]}; do echo $i; done
+
+echo "---"
+
+echo "for i in ${animals[@]}; do echo $i; done"
+for i in ${animals[@]}; do echo $i; done
+
+echo "---"
+
+echo "for i in "${animals[*]}"; do echo $i; done"
+for i in "${animals[*]}"; do echo $i; done
+
+echo "---"
+
+echo "for i in "${animals[@]}"; do echo $i; done"
+for i in "${animals[@]}"; do echo $i; done
+
+echo "---"
+
+
+foo=([2]=a [4]=b [6]=c)
+echo "foo=([2]=a [4]=b [6]=c)"
+echo "for i in "${foo[@]}"; do echo $i; done"
+for i in "${foo[@]}"; do echo $i; done
+
+echo "for i in "${!foo[@]}"; do echo $i; done"
+for i in "${!foo[@]}"; do echo $i; done
