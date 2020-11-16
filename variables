@@ -2,7 +2,6 @@
 
 # local-vars: script to demonstrate local variables
 
-
 foo=0	# global variable foo
 
 funct_1 ()  {
